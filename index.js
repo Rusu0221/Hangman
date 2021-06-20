@@ -60,9 +60,3 @@ function endGame() {
     guessWord = 0;
     restart();
 }
-
-
-
-
-//document.getElementById("word").style.visibility = "hidden";   visibility
-//document.getElementById("submit").style.visibility = "hidden";
