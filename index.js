@@ -21,14 +21,14 @@ function setWord() {
             button.innerHTML = String.fromCharCode(i);
             button.id = String.fromCharCode(i);
             document.getElementById("allButton").appendChild(button);
-            button.onclick = function() {check(String.fromCharCode(i))}
+            button.onclick = function() {checkLetterInWord(String.fromCharCode(i))}
         }
     } else {
         document.getElementById("verification").innerHTML = "Enter only characters from A to Z."
     }
 }
 
-function check(x) {
+function checkLetterInWord(x) {
     if (guess.includes(x) == true) {
         for (let i = 0; i < guess.length; ++i) {
             if (guess.charAt(i) == x) {
